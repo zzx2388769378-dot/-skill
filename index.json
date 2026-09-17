@@ -6,11 +6,15 @@
                          "title":  "第七日存档"
                      },
                      {
+                         "index":  "fiction/衣冠未乱/index.json",
+                         "title":  "衣冠未乱"
+                     },
+                     {
                          "index":  "fiction/覆土纪事/index.json",
                          "title":  "覆土纪事"
                      }
                  ],
-    "updated":  "2026-09-17 19:09:39",
+    "updated":  "2026-09-17 23:12:08",
     "genres_index":  "fiction/_genres/index.json",
     "fiction_index":  "fiction/index.json",
     "agents":  [

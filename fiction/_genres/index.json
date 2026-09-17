@@ -1,11 +1,17 @@
 ﻿{
     "items":  [
                   {
+                      "file":  "20260917-erbian-scout.md",
+                      "path":  "fiction/_genres/20260917-erbian-scout.md",
+                      "status":  "selected",
+                      "updated":  "2026-09-17 22:54"
+                  },
+                  {
                       "file":  "20260917-scout.md",
                       "path":  "fiction/_genres/20260917-scout.md",
                       "status":  "selected",
                       "updated":  "2026-09-17 16:40"
                   }
               ],
-    "updated":  "2026-09-17 19:09:39"
+    "updated":  "2026-09-17 23:12:08"
 }

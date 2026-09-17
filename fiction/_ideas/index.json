@@ -22,12 +22,26 @@
                       "updated":  "2026-09-17 17:43"
                   },
                   {
+                      "file":  "衣冠未乱-selected.md",
+                      "path":  "fiction/_ideas/衣冠未乱-selected.md",
+                      "status":  "selected",
+                      "is_selected":  true,
+                      "updated":  "2026-09-17 22:57"
+                  },
+                  {
                       "file":  "覆土纪事-selected.md",
                       "path":  "fiction/_ideas/覆土纪事-selected.md",
                       "status":  "selected",
                       "is_selected":  true,
                       "updated":  "2026-09-17 16:42"
+                  },
+                  {
+                      "file":  "都市身份反差-20260917.md",
+                      "path":  "fiction/_ideas/都市身份反差-20260917.md",
+                      "status":  "selected",
+                      "is_selected":  false,
+                      "updated":  "2026-09-17 22:57"
                   }
               ],
-    "updated":  "2026-09-17 19:09:39"
+    "updated":  "2026-09-17 23:12:08"
 }
