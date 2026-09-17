@@ -1,0 +1,43 @@
+---
+description: fiction 目录工作流——架构师规划、写手落地，禁止污染模板
+globs: fiction/**
+alwaysApply: false
+---
+
+# fiction 工作流
+
+## Agent 分工
+
+| Agent | 职责 | 输出 |
+|-------|------|------|
+| fiction-pipeline | 读索引、判定阶段、路由下一步 | 建议指令 |
+| fiction-genre-scout | 检索题材趋势+唯一书名 | fiction/_genres/*.md |
+| fiction-ideator | 生成故事想法 | fiction/_ideas/*.md + *-selected.md |
+| fiction-architect | 分解想法、补 gaps、总架构 | fiction/书名/ |
+| fiction-writer | 生成正文 | chapters/*.md |
+| fiction-index | 文档检索、更新 INDEX | INDEX.md / index.json |
+
+## 目录约定
+
+`fiction/{书名}/idea.md` → `gaps.md` → `architecture.md` → `novel.md` → `chapters/`
+
+## 硬性规则
+
+1. **禁止**修改 `_templates/`
+2. gaps 未确认时，架构师不得填 novel.md；写手不得开写
+3. 正文只写入 `fiction/{书名}/chapters/`（优先）或 novel.md 的 content 字段
+4. idea.md 原话：架构师只捕获不润色；写手不修改
+5. 写手不改 STORY_CORE / architecture，除非用户明确要求
+
+## 触发
+
+- 不确定下一步：`@fiction-pipeline`
+- 查文档/进度：`@fiction-index`
+- 不知写什么类型：`@fiction-genre-scout`
+- 有题材、没故事：`@fiction-ideator`
+- 有想法/已选点子：`@fiction-architect`
+- 开写/续写：`@fiction-writer`
+
+## 索引维护
+
+任一 Agent 写入 fiction/ 后运行：`.\scripts\update-index.ps1`

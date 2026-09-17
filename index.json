@@ -1,0 +1,44 @@
+﻿{
+    "ideas":  [
+
+              ],
+    "agents":  [
+                   {
+                       "name":  "fiction-architect",
+                       "path":  ".cursor/skills/fiction-architect/SKILL.md",
+                       "description":  "Decomposes novel ideas into structured architecture using NOVEL-MASTER template. Captures raw ideas,..."
+                   },
+                   {
+                       "name":  "fiction-genre-scout",
+                       "path":  ".cursor/skills/fiction-genre-scout/SKILL.md",
+                       "description":  "Searches the web for trending novel genres/themes, generates hot and innovative genre pitches each w..."
+                   },
+                   {
+                       "name":  "fiction-ideator",
+                       "path":  ".cursor/skills/fiction-ideator/SKILL.md",
+                       "description":  "Generates multiple novel story ideas from a genre or theme (题材). Outputs pitch cards with logline, p..."
+                   },
+                   {
+                       "name":  "fiction-index",
+                       "path":  ".cursor/skills/fiction-index/SKILL.md",
+                       "description":  "Searches and retrieves project documentation via INDEX.md and index.json. Updates the index when fil..."
+                   },
+                   {
+                       "name":  "fiction-pipeline",
+                       "path":  ".cursor/skills/fiction-pipeline/SKILL.md",
+                       "description":  "Orchestrates the full fiction writing pipeline. Reads INDEX/index.json to determine current stage an..."
+                   },
+                   {
+                       "name":  "fiction-writer",
+                       "path":  ".cursor/skills/fiction-writer/SKILL.md",
+                       "description":  "Writes novel prose from fiction-architect output. Reads architecture.md and novel.md under fiction/{..."
+                   }
+               ],
+    "projects":  [
+
+                 ],
+    "updated":  "2026-09-17 16:21:00",
+    "genres":  [
+
+               ]
+}
