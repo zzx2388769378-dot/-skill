@@ -7,6 +7,13 @@ param(
 $Root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $FictionDir = Join-Path $Root "fiction"
 
+# 正文字数：汉字 + 数字 + 英文字母；不计标点、空白、换行（与 fiction-writer 技能一致）
+function Get-ProseCharCount {
+    param([string]$Text)
+    if ([string]::IsNullOrEmpty($Text)) { return 0 }
+    return [regex]::Matches($Text, '[\p{IsCJKUnifiedIdeographs}0-9A-Za-z]').Count
+}
+
 function Sync-ChapterTextFile {
     param([string]$MdPath)
 
@@ -20,6 +27,7 @@ function Sync-ChapterTextFile {
     }
 
     $body = $Matches[1]
+    $charCount = Get-ProseCharCount $body
     # Normalize any line ending to LF, then emit CRLF (Windows / 番茄粘贴保留段落)
     $body = $body -replace '\r\n', "`n" -replace '\r', "`n"
     $body = ($body -replace '\n', "`r`n").TrimEnd("`r", "`n") + "`r`n"
@@ -28,8 +36,20 @@ function Sync-ChapterTextFile {
     $utf8NoBom = New-Object System.Text.UTF8Encoding $false
     [IO.File]::WriteAllText($txtPath, $body, $utf8NoBom)
 
+    # 回写 frontmatter word_count
+    if ($raw -match '(?m)^word_count:\s*\d+') {
+        $raw = $raw -replace '(?m)^word_count:\s*\d+', "word_count: $charCount"
+    } else {
+        $raw = $raw -replace '(?m)(^---\r?\n)', "---`r`nword_count: $charCount`r`n"
+    }
+    [IO.File]::WriteAllText($MdPath, $raw, $utf8NoBom)
+
     if (-not $Quiet) {
-        Write-Host "  $($([IO.Path]::GetFileName($txtPath)))" -ForegroundColor DarkGray
+        $warn = ""
+        if ($charCount -lt 1988) { $warn = " LOW" }
+        elseif ($charCount -gt 2528) { $warn = " HIGH" }
+        $name = [IO.Path]::GetFileName($txtPath)
+        Write-Host "  $name chars=$charCount$warn" -ForegroundColor DarkGray
     }
     return $true
 }

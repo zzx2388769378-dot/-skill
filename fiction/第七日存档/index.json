@@ -1,6 +1,6 @@
 ﻿{
     "novel_status":  "\"writing\"",
-    "updated":  "2026-09-17 18:23:45",
+    "updated":  "2026-09-17 18:47:12",
     "stage":  "writing",
     "files":  [
                   {
@@ -30,54 +30,72 @@
                          "path":  "fiction/第七日存档/chapters/001.md",
                          "chapter_id":  "001",
                          "title":  "倒计时",
-                         "word_count":  3480,
+                         "word_count":  1839,
                          "status":  "done",
-                         "updated":  "2026-09-17 18:17"
+                         "updated":  "2026-09-17 18:46"
                      },
                      {
                          "file":  "002.md",
                          "path":  "fiction/第七日存档/chapters/002.md",
                          "chapter_id":  "002",
                          "title":  "未寄出的信",
-                         "word_count":  3520,
+                         "word_count":  1826,
                          "status":  "done",
-                         "updated":  "2026-09-17 18:17"
+                         "updated":  "2026-09-17 18:46"
                      },
                      {
                          "file":  "003.md",
                          "path":  "fiction/第七日存档/chapters/003.md",
                          "chapter_id":  "003",
                          "title":  "管理员权限",
-                         "word_count":  3580,
+                         "word_count":  1986,
                          "status":  "done",
-                         "updated":  "2026-09-17 18:20"
+                         "updated":  "2026-09-17 18:46"
                      },
                      {
                          "file":  "004.md",
                          "path":  "fiction/第七日存档/chapters/004.md",
                          "chapter_id":  "004",
                          "title":  "空出来的槽",
-                         "word_count":  3460,
+                         "word_count":  1062,
                          "status":  "done",
-                         "updated":  "2026-09-17 18:22"
+                         "updated":  "2026-09-17 18:46"
                      },
                      {
                          "file":  "005.md",
                          "path":  "fiction/第七日存档/chapters/005.md",
                          "chapter_id":  "005",
                          "title":  "遗憾名单",
-                         "word_count":  3510,
+                         "word_count":  1159,
                          "status":  "done",
-                         "updated":  "2026-09-17 18:23"
+                         "updated":  "2026-09-17 18:46"
                      },
                      {
                          "file":  "006.md",
                          "path":  "fiction/第七日存档/chapters/006.md",
                          "chapter_id":  "006",
                          "title":  "第一日终",
-                         "word_count":  3540,
+                         "word_count":  1251,
                          "status":  "done",
-                         "updated":  "2026-09-17 18:23"
+                         "updated":  "2026-09-17 18:46"
+                     },
+                     {
+                         "file":  "007.md",
+                         "path":  "fiction/第七日存档/chapters/007.md",
+                         "chapter_id":  "007",
+                         "title":  "第二个名字",
+                         "word_count":  3009,
+                         "status":  "done",
+                         "updated":  "2026-09-17 18:46"
+                     },
+                     {
+                         "file":  "008.md",
+                         "path":  "fiction/第七日存档/chapters/008.md",
+                         "chapter_id":  "008",
+                         "title":  "年级池规则",
+                         "word_count":  2301,
+                         "status":  "done",
+                         "updated":  "2026-09-17 18:46"
                      }
                  ],
     "gaps_status":  "confirmed",
