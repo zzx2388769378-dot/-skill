@@ -27,22 +27,25 @@
 | 2 | ideator | `_ideas/` + `*-selected.md` | 选 A/B/C |
 | 3 | architect | `fiction/书名/` 架构 | 确认 gaps |
 | 4 | writer | `chapters/` 正文 | 续写 |
-| 5 | index | `INDEX.md` 更新 | 每步后自动/手动跑脚本 |
+| 5 | index | 各目录 `INDEX.md` 更新 | 每步后运行 update-index 脚本 |
 
 详细审查见 [docs/PIPELINE.md](docs/PIPELINE.md)
 
 ---
 
-## 文档检索
+## 文档检索（索引在对应文件夹下）
 
-| 方式 | 说明 |
+| 位置 | 内容 |
 |------|------|
-| `INDEX.md` | 人类可读的项目索引（Agent、项目、阶段） |
-| `index.json` | 机器可读，供 Agent 快速查询 |
-| `@fiction-index` | 检索文档、查进度、更新索引 |
-| `.\scripts\update-index.ps1` | 重新生成 INDEX（**有更新必跑**） |
+| `fiction/INDEX.md` | 全部小说总览 |
+| `fiction/_genres/INDEX.md` | 题材候选 |
+| `fiction/_ideas/INDEX.md` | 故事点子 |
+| `fiction/{书名}/INDEX.md` | 单本书：设定文件 + 章节列表 |
+| `fiction/{书名}/chapters/INDEX.md` | 章节正文索引 |
+| `INDEX.md`（根目录） | 项目入口 + Agent 列表 |
 
-**索引包含：** 全部 Agent 列表、`_genres/`、`_ideas/`、正式项目阶段、已写章数。
+更新：`.\scripts\update-index.ps1`（**有内容变更必跑**）  
+检索：`@fiction-index`
 
 ---
 
@@ -55,7 +58,7 @@
 我接下来该做什么？
 ```
 
-读 `index.json` 判定阶段，告诉你该 @ 哪个 Agent。
+读 `fiction/index.json` 判定阶段，告诉你该 @ 哪个 Agent。
 
 ### fiction-genre-scout（题材雷达）
 
@@ -95,13 +98,16 @@
 ```
 p1/
 ├── README.md
-├── INDEX.md / index.json          ← 文档索引
-├── docs/PIPELINE.md               ← 全流程审查
+├── INDEX.md                       ← 项目入口索引
+├── docs/PIPELINE.md
 ├── _templates/NOVEL-MASTER.template.md
 ├── fiction/
-│   ├── _genres/
-│   ├── _ideas/
+│   ├── INDEX.md                   ← 小说总索引
+│   ├── _genres/INDEX.md
+│   ├── _ideas/INDEX.md
 │   └── 书名/
+│       ├── INDEX.md               ← 本书索引
+│       └── chapters/INDEX.md      ← 章节索引
 ├── .cursor/skills/                ← 6 个 Agent
 └── scripts/
     ├── new-fiction.ps1

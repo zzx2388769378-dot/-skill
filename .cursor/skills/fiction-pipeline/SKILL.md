@@ -13,8 +13,8 @@ description: >-
 
 ## 第一步：读索引
 
-1. 运行或等效读取 `index.json`（若无则 `.\scripts\update-index.ps1`）
-2. 若用户指定书名，查 `projects[]` 中该书的 `stage`
+1. 运行或等效读取 `fiction/index.json`（若无则 `.\scripts\update-index.ps1`）
+2. 若用户指定书名，读 `fiction/{书名}/index.json` 的 `stage`
 
 ## 第二步：判定阶段 → 路由
 
@@ -36,7 +36,7 @@ description: >-
 ## 当前进度
 - 书名：…
 - 阶段：…
-- 依据：index.json / 文件 …
+- 依据：fiction/index.json 或 fiction/{书名}/index.json
 
 ## 建议下一步
 @fiction-xxx …（具体指令）

@@ -1,60 +1,56 @@
 ---
 name: fiction-index
 description: >-
-  Searches and retrieves project documentation via INDEX.md and index.json.
-  Updates the index when files change. Use when user asks to 检索文档, 查索引,
-  项目进度, 哪一步, 找文件, search docs, or after any agent writes new files.
+  Searches project docs via folder-local INDEX.md and index.json. Fiction content
+  indexes live under fiction/ and each book folder. Use when user asks 检索文档,
+  查索引, 项目进度, 章节列表, or after agents write files.
 ---
 
 # Fiction Index · 文档检索
 
-项目内文档与进度的**检索入口**。优先读索引，再读具体文件。
+索引按**内容所在文件夹**分层存放，优先读对应目录下的索引。
+
+## 索引位置
+
+| 范围 | 路径 |
+|------|------|
+| 项目入口 | `INDEX.md` / `index.json`（根目录，仅 Agent 与文档导航） |
+| 全部小说 | `fiction/INDEX.md` / `fiction/index.json` |
+| 题材候选 | `fiction/_genres/INDEX.md` |
+| 故事点子 | `fiction/_ideas/INDEX.md` |
+| 单本书 | `fiction/{书名}/INDEX.md` |
+| 章节正文 | `fiction/{书名}/chapters/INDEX.md` |
 
 ## 检索顺序
 
-1. `index.json` 或 `INDEX.md` — 全局概览
-2. 按路径读取目标文件
-3. 需要全文搜索时用 Grep 限定在 `fiction/`、`.cursor/`、`_templates/`
+1. 确定范围 → 读该文件夹的 `index.json` 或 `INDEX.md`
+2. 查单本书 → `fiction/{书名}/INDEX.md`
+3. 查章节 → `fiction/{书名}/chapters/INDEX.md`
+4. 全文搜索 → Grep 限定在目标目录
 
-## 更新索引（有文件变更时必做）
-
-项目内容更新后，运行：
+## 更新索引
 
 ```powershell
 .\scripts\update-index.ps1
 ```
 
-**以下情况应更新索引：**
+**以下情况应更新：**
 
-- 任一 Agent 写入 `_genres/`、`_ideas/`、`fiction/书名/`
-- 用户手动改动了 fiction 下文件
-- 新增或修改 Skill
+- 写入 `_genres/`、`_ideas/`、`fiction/{书名}/` 或 `chapters/`
+- 新增/修改章节正文
 
-更新后在对话中告知：`索引已更新，见 INDEX.md`
+更新后告知用户具体路径，例如：`fiction/雾港/INDEX.md 已更新`
 
-## 常见检索请求
+## 常见检索
 
-| 用户问 | 怎么做 |
+| 用户问 | 读哪里 |
 |--------|--------|
-| 现在有哪些书 | 读 index.json → projects |
-| 《XX》写到哪了 | projects[].stage + chapters_done |
-| 哪个 Agent 干什么 | index.json → agents |
-| 上次选的题材 | 读 fiction/_genres/ 最新 selected |
-| 选中的想法 | 读 fiction/_ideas/*-selected.md |
-| 开写前缺什么 | 读 fiction/书名/gaps.md + novel.md |
-
-## 阶段判定（与 index 脚本一致）
-
-| stage | 含义 | 下一步 Agent |
-|-------|------|--------------|
-| — | 无项目 | genre-scout 或 ideator |
-| _genres pending | 题材未选 | genre-scout 确认选择 |
-| _ideas pending | 点子未选 | ideator 确认选择 |
-| idea_captured | 有 idea，gaps 未确认 | fiction-architect |
-| gaps_confirmed | gaps 已确认 | fiction-architect 继续 |
-| outlined | novel.md 就绪 | fiction-writer 开写 |
-| writing | 有正文 | fiction-writer 续写 |
+| 有哪些书 | `fiction/index.json` |
+| 《XX》进度 | `fiction/XX/index.json` |
+| 《XX》有哪些章 | `fiction/XX/chapters/index.json` |
+| 题材候选 | `fiction/_genres/index.json` |
+| 选定想法 | `fiction/_ideas/*-selected.md` + `_ideas/index.json` |
 
 ## 禁止
 
-- 不要修改 `_templates/`（检索只读即可）
+- 不要修改 `_templates/`

@@ -33,7 +33,7 @@ flowchart LR
 
 | 缺口 | 处理 |
 |------|------|
-| 各 Agent 产出后无统一检索 | 新增 `update-index.ps1` + `INDEX.md` + `fiction-index` |
+| 各 Agent 产出后无统一检索 | `update-index.ps1` 在各内容目录生成 `INDEX.md` + `fiction-index` |
 | 用户不知下一步 | 新增 `fiction-pipeline` 调度 Skill |
 | ideator→architect 靠手动粘贴 | ideator 选定后写 `fiction/_ideas/{书名}-selected.md` 交接 |
 | 各 Agent 写完后索引过期 | 各 Skill 末尾增加「运行 update-index」 |
@@ -66,6 +66,18 @@ fiction/{书名}/gaps.md              status: confirmed
 fiction/{书名}/architecture.md
 fiction/{书名}/novel.md             status: outlining → writing
 fiction/{书名}/chapters/NNN.md
+fiction/{书名}/INDEX.md              ← 本书索引
+fiction/{书名}/chapters/INDEX.md     ← 章节索引
+```
+
+## 索引分层
+
+```
+fiction/INDEX.md
+fiction/_genres/INDEX.md
+fiction/_ideas/INDEX.md
+fiction/{书名}/INDEX.md
+fiction/{书名}/chapters/INDEX.md
 ```
 
 ## 维护

@@ -15,7 +15,7 @@ alwaysApply: false
 | fiction-ideator | 生成故事想法 | fiction/_ideas/*.md + *-selected.md |
 | fiction-architect | 分解想法、补 gaps、总架构 | fiction/书名/ |
 | fiction-writer | 生成正文 | chapters/*.md |
-| fiction-index | 文档检索、更新 INDEX | INDEX.md / index.json |
+| fiction-index | 文档检索、更新索引 | 各文件夹 INDEX.md / index.json |
 
 ## 目录约定
 

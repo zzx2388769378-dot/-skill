@@ -65,7 +65,7 @@ description: >-
 
 - 本章正文（或告知已写入文件路径）
 - 摘要 + 下一章预告（若 002 蓝图存在）
-- 运行 `.\scripts\update-index.ps1` 更新索引
+- 运行 `.\scripts\update-index.ps1`（更新 `fiction/{书名}/INDEX.md` 与 `chapters/INDEX.md`）
 
 ---
 
