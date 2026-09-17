@@ -62,7 +62,8 @@ description: >-
 
 ### 3. 写后更新
 
-- 正文写入 `chapters/001.md`（优先于 novel.md 内 content 字段）
+- 正文写入 `chapters/NNN.md`（优先于 novel.md 内 content 字段）
+- **同步** `chapters/NNN.txt`：运行 `.\scripts\sync-chapter-text.ps1`（或 `update-index.ps1`，内含同步）
 - 该章 `status` → `done`；novel.md frontmatter `status` → `writing`
 - 更新 `CONTINUITY` 中 001 摘要（≤200 字，只写事实）
 - 更新 `story_state`（timeline、location、knows、hooks）
@@ -70,8 +71,8 @@ description: >-
 
 ### 4. 输出
 
-- 告知已写入 `chapters/NNN.md` 路径
-- **在聊天回复末尾**附相同正文于 ` ```text ` 代码块（Cursor 自带 **Copy** 按钮，方便用户即时复制）
+- 告知已写入 `chapters/NNN.md` 与 `chapters/NNN.txt` 路径
+- **发表请复制 `.txt`**（CRLF，粘贴番茄保留段落）；聊天回复末尾可附正文 ` ```text ` 块供阅读，并提醒用户发表用 `.txt`
 - 摘要 + 下一章预告（若下一章蓝图存在）
 - 运行 `.\scripts\update-index.ps1`（更新 `fiction/{书名}/INDEX.md` 与 `chapters/INDEX.md`）
 
@@ -183,9 +184,20 @@ description: >-
 
 ---
 
-## 章节文件格式（可复制）
+## 章节文件格式（双文件 · 发表可复制）
 
-`chapters/001.md` 正文须包在 **` ```text ` 围栏**内，以便用户在 Cursor Markdown 预览中点击代码块右上角 **Copy** 一键复制纯文本（粘贴番茄等发表平台）。
+每章落盘 **两个文件**：
+
+| 文件 | 用途 |
+|------|------|
+| `chapters/NNN.md` | frontmatter + 预览用 ` ```text ` 围栏正文 |
+| `chapters/NNN.txt` | **发表专用**：从 md 同步，UTF-8 **CRLF** 换行 |
+
+**为何双文件**：Cursor / VS Code 预览里从 ` ```text ` 代码块 Copy，粘贴番茄等后台时**常会丢失换行**。用户应打开 `NNN.txt` → Ctrl+A → Ctrl+C，段落换行可保留。
+
+落盘后运行 `.\scripts\sync-chapter-text.ps1`（`update-index.ps1` 已内置）。
+
+### `NNN.md` 模板
 
 ```markdown
 ---
@@ -195,21 +207,25 @@ word_count: 2850
 status: done
 ---
 
-> 正文预览 → 点击代码块右上角 **Copy** 复制（纯文本，不含围栏）
+> **发表复制（保留换行）**：打开同目录 [`001.txt`](001.txt) → Ctrl+A → Ctrl+C → 粘贴番茄后台。  
+> 勿从下方代码块或预览 Copy（易丢换行）。下方仅供阅读预览。
 
 \`\`\`text
 （正文直接开篇，不要写「第一章」等元标题）
 \`\`\`
 ```
 
-**围栏内规则**（复制即用）：
+### 正文规则（md 围栏与 txt 内容一致）
 
 - 纯文本：不用 `**`、`*`、`#`、链接等 Markdown 标记
 - 系统提示保留【】，如 `【系统提示】当前分支：…`
-- 段落之间空一行；对话用中文引号「」
-- frontmatter 与上方说明行在围栏**外**，不计入 word_count
+- **段落之间必须空一行**（单个 `\n` 在部分后台会被吞成空格）
+- 对话用中文引号「」
+- frontmatter 与说明行在围栏**外**，不计入 word_count
 
-**禁止**：仅把正文裸写在 md 里而不包 ` ```text `（用户无法一键复制）
+**禁止**：
+- 仅写 md 不生成 txt
+- 告诉用户从预览代码块 Copy 去发表（易丢换行）
 
 ---
 

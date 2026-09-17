@@ -17,6 +17,8 @@
 
 内容有更新后运行：`.\scripts\update-index.ps1`
 
+提交与推送见下方 [Git 提交与推送](#git-提交与推送)。
+
 ---
 
 ## 全流程（5 步闭环）
@@ -116,6 +118,44 @@ p1/
 
 ---
 
+## Git 提交与推送
+
+内容有变更时，建议先更新索引再提交：
+
+```powershell
+# 1. 更新索引（有 fiction/ 内容变更时必跑）
+.\scripts\update-index.ps1
+
+# 2. 查看变更
+git status
+
+# 3. 暂存（全部）
+git add .
+
+# 或只暂存某本书
+git add "fiction/第七日存档/"
+
+# 4. 提交（按实际修改写说明）
+git commit -m "第七日存档：续写第005-006章"
+
+# 5. 推送到远程
+git push origin main
+```
+
+常用单行（索引已更新、确认要提交全部变更时）：
+
+```powershell
+git add .; git commit -m "第七日存档：续写第005-006章"; git push origin main
+```
+
+说明：
+
+- 当前分支为 `main`，远程为 `origin`
+- 提交信息建议写清书名与做了什么，例如：`第七日存档：修订第003章`、`更新 writer skill`
+- 首次推送新分支：`git push -u origin <分支名>`
+
+---
+
 ## 审查结论
 
 **四创作 Agent 已闭环，无需再加写作类 Agent。**
@@ -135,4 +175,5 @@ p1/
 @fiction-pipeline → 看进度
 @fiction-genre-scout → @fiction-ideator → @fiction-architect → @fiction-writer
 更新索引：.\scripts\update-index.ps1
+提交推送：git add . → git commit -m "说明" → git push origin main
 ```

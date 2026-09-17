@@ -8,7 +8,7 @@
                          "title":  "倒计时",
                          "word_count":  3480,
                          "status":  "done",
-                         "updated":  "2026-09-17 18:11"
+                         "updated":  "2026-09-17 18:17"
                      },
                      {
                          "file":  "002.md",
@@ -17,8 +17,44 @@
                          "title":  "未寄出的信",
                          "word_count":  3520,
                          "status":  "done",
-                         "updated":  "2026-09-17 18:13"
+                         "updated":  "2026-09-17 18:17"
+                     },
+                     {
+                         "file":  "003.md",
+                         "path":  "fiction/第七日存档/chapters/003.md",
+                         "chapter_id":  "003",
+                         "title":  "管理员权限",
+                         "word_count":  3580,
+                         "status":  "done",
+                         "updated":  "2026-09-17 18:20"
+                     },
+                     {
+                         "file":  "004.md",
+                         "path":  "fiction/第七日存档/chapters/004.md",
+                         "chapter_id":  "004",
+                         "title":  "空出来的槽",
+                         "word_count":  3460,
+                         "status":  "done",
+                         "updated":  "2026-09-17 18:22"
+                     },
+                     {
+                         "file":  "005.md",
+                         "path":  "fiction/第七日存档/chapters/005.md",
+                         "chapter_id":  "005",
+                         "title":  "遗憾名单",
+                         "word_count":  3510,
+                         "status":  "done",
+                         "updated":  "2026-09-17 18:23"
+                     },
+                     {
+                         "file":  "006.md",
+                         "path":  "fiction/第七日存档/chapters/006.md",
+                         "chapter_id":  "006",
+                         "title":  "第一日终",
+                         "word_count":  3540,
+                         "status":  "done",
+                         "updated":  "2026-09-17 18:23"
                      }
                  ],
-    "updated":  "2026-09-17 18:13:48"
+    "updated":  "2026-09-17 18:23:45"
 }

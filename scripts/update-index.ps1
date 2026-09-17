@@ -340,9 +340,16 @@ Write-IndexPair -Dir $Root -MdContent $rootSb.ToString() -JsonObj @{
     projects = ($Projects | ForEach-Object { @{ title = $_.title; index = "$($_.path)/index.json" } })
 }
 
+# Sync chapters/*.txt (CRLF) from ```text``` blocks for paste-friendly copy
+$SyncScript = Join-Path (Split-Path -Parent $MyInvocation.MyCommand.Path) "sync-chapter-text.ps1"
+if (Test-Path $SyncScript) {
+    & $SyncScript -Quiet
+}
+
 if (-not $Quiet) {
     Write-Host "Indexes updated:" -ForegroundColor Green
     Write-Host "  fiction/INDEX.md (+ per-book, _genres, _ideas, chapters/)"
+    Write-Host "  chapters/*.txt (CRLF copy export)"
     Write-Host "  INDEX.md (root entry)"
     Write-Host "Projects: $($Projects.Count) | Genres: $($Genres.Count) | Ideas: $($Ideas.Count)"
 }
