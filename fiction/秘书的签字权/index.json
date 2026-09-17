@@ -1,0 +1,49 @@
+﻿{
+    "novel_status":  "\"writing\"",
+    "updated":  "2026-09-18 00:21:19",
+    "stage":  "writing",
+    "files":  [
+                  {
+                      "file":  "idea.md",
+                      "path":  "fiction/秘书的签字权/idea.md",
+                      "status":  "-"
+                  },
+                  {
+                      "file":  "gaps.md",
+                      "path":  "fiction/秘书的签字权/gaps.md",
+                      "status":  "confirmed"
+                  },
+                  {
+                      "file":  "architecture.md",
+                      "path":  "fiction/秘书的签字权/architecture.md",
+                      "status":  "confirmed"
+                  },
+                  {
+                      "file":  "novel.md",
+                      "path":  "fiction/秘书的签字权/novel.md",
+                      "status":  "\"writing\""
+                  }
+              ],
+    "chapters":  [
+                     {
+                         "file":  "001.md",
+                         "path":  "fiction/秘书的签字权/chapters/001.md",
+                         "chapter_id":  "001",
+                         "title":  "倒杯水",
+                         "word_count":  1905,
+                         "status":  "done",
+                         "updated":  "2026-09-18 00:16"
+                     },
+                     {
+                         "file":  "002.md",
+                         "path":  "fiction/秘书的签字权/chapters/002.md",
+                         "chapter_id":  "002",
+                         "title":  "空戒",
+                         "word_count":  1828,
+                         "status":  "done",
+                         "updated":  "2026-09-18 00:16"
+                     }
+                 ],
+    "gaps_status":  "confirmed",
+    "title":  "秘书的签字权"
+}

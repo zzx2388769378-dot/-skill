@@ -3,6 +3,56 @@
     "genres_count":  2,
     "projects":  [
                      {
+                         "title":  "秘书的签字权",
+                         "path":  "fiction/秘书的签字权",
+                         "stage":  "writing",
+                         "gaps_status":  "confirmed",
+                         "novel_status":  "\"writing\"",
+                         "chapters_done":  2,
+                         "files":  [
+                                       {
+                                           "file":  "idea.md",
+                                           "path":  "fiction/秘书的签字权/idea.md",
+                                           "status":  "-"
+                                       },
+                                       {
+                                           "file":  "gaps.md",
+                                           "path":  "fiction/秘书的签字权/gaps.md",
+                                           "status":  "confirmed"
+                                       },
+                                       {
+                                           "file":  "architecture.md",
+                                           "path":  "fiction/秘书的签字权/architecture.md",
+                                           "status":  "confirmed"
+                                       },
+                                       {
+                                           "file":  "novel.md",
+                                           "path":  "fiction/秘书的签字权/novel.md",
+                                           "status":  "\"writing\""
+                                       }
+                                   ],
+                         "chapters":  [
+                                          {
+                                              "file":  "001.md",
+                                              "path":  "fiction/秘书的签字权/chapters/001.md",
+                                              "chapter_id":  "001",
+                                              "title":  "倒杯水",
+                                              "word_count":  1905,
+                                              "status":  "done",
+                                              "updated":  "2026-09-18 00:16"
+                                          },
+                                          {
+                                              "file":  "002.md",
+                                              "path":  "fiction/秘书的签字权/chapters/002.md",
+                                              "chapter_id":  "002",
+                                              "title":  "空戒",
+                                              "word_count":  1828,
+                                              "status":  "done",
+                                              "updated":  "2026-09-18 00:16"
+                                          }
+                                      ]
+                     },
+                     {
                          "title":  "第七日存档",
                          "path":  "fiction/第七日存档",
                          "stage":  "writing",
@@ -39,7 +89,7 @@
                                               "title":  "倒计时",
                                               "word_count":  1839,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "002.md",
@@ -48,7 +98,7 @@
                                               "title":  "未寄出的信",
                                               "word_count":  1826,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "003.md",
@@ -57,7 +107,7 @@
                                               "title":  "管理员权限",
                                               "word_count":  1986,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "004.md",
@@ -66,7 +116,7 @@
                                               "title":  "空出来的槽",
                                               "word_count":  1062,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "005.md",
@@ -75,7 +125,7 @@
                                               "title":  "遗憾名单",
                                               "word_count":  1159,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "006.md",
@@ -84,7 +134,7 @@
                                               "title":  "第一日终",
                                               "word_count":  1251,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "007.md",
@@ -93,7 +143,7 @@
                                               "title":  "第二个名字",
                                               "word_count":  3009,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "008.md",
@@ -102,7 +152,7 @@
                                               "title":  "收音机",
                                               "word_count":  1990,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "009.md",
@@ -111,7 +161,7 @@
                                               "title":  "转让灰键",
                                               "word_count":  2373,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "010.md",
@@ -120,7 +170,7 @@
                                               "title":  "年级池",
                                               "word_count":  1989,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "011.md",
@@ -129,7 +179,7 @@
                                               "title":  "沈枝未读",
                                               "word_count":  2104,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "012.md",
@@ -138,7 +188,7 @@
                                               "title":  "第二日终",
                                               "word_count":  1971,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "013.md",
@@ -147,7 +197,7 @@
                                               "title":  "体育委员",
                                               "word_count":  2013,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "014.md",
@@ -156,7 +206,7 @@
                                               "title":  "管理员弹窗",
                                               "word_count":  1961,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           },
                                           {
                                               "file":  "015.md",
@@ -165,41 +215,8 @@
                                               "title":  "缩减惩罚",
                                               "word_count":  2033,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 23:04"
+                                              "updated":  "2026-09-18 00:16"
                                           }
-                                      ]
-                     },
-                     {
-                         "title":  "衣冠未乱",
-                         "path":  "fiction/衣冠未乱",
-                         "stage":  "outlined",
-                         "gaps_status":  "confirmed",
-                         "novel_status":  "\"outlining\"",
-                         "chapters_done":  0,
-                         "files":  [
-                                       {
-                                           "file":  "idea.md",
-                                           "path":  "fiction/衣冠未乱/idea.md",
-                                           "status":  "-"
-                                       },
-                                       {
-                                           "file":  "gaps.md",
-                                           "path":  "fiction/衣冠未乱/gaps.md",
-                                           "status":  "confirmed"
-                                       },
-                                       {
-                                           "file":  "architecture.md",
-                                           "path":  "fiction/衣冠未乱/architecture.md",
-                                           "status":  "confirmed"
-                                       },
-                                       {
-                                           "file":  "novel.md",
-                                           "path":  "fiction/衣冠未乱/novel.md",
-                                           "status":  "\"outlining\""
-                                       }
-                                   ],
-                         "chapters":  [
-
                                       ]
                      },
                      {
@@ -370,5 +387,5 @@
                                       ]
                      }
                  ],
-    "updated":  "2026-09-17 23:12:08"
+    "updated":  "2026-09-18 00:21:19"
 }

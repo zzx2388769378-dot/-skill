@@ -1,0 +1,24 @@
+﻿{
+    "book":  "秘书的签字权",
+    "chapters":  [
+                     {
+                         "file":  "001.md",
+                         "path":  "fiction/秘书的签字权/chapters/001.md",
+                         "chapter_id":  "001",
+                         "title":  "倒杯水",
+                         "word_count":  1905,
+                         "status":  "done",
+                         "updated":  "2026-09-18 00:16"
+                     },
+                     {
+                         "file":  "002.md",
+                         "path":  "fiction/秘书的签字权/chapters/002.md",
+                         "chapter_id":  "002",
+                         "title":  "空戒",
+                         "word_count":  1828,
+                         "status":  "done",
+                         "updated":  "2026-09-18 00:16"
+                     }
+                 ],
+    "updated":  "2026-09-18 00:21:19"
+}
