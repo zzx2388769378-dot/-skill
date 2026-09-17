@@ -8,7 +8,7 @@
                          "stage":  "writing",
                          "gaps_status":  "confirmed",
                          "novel_status":  "\"writing\"",
-                         "chapters_done":  1,
+                         "chapters_done":  2,
                          "files":  [
                                        {
                                            "file":  "idea.md",
@@ -39,7 +39,16 @@
                                               "title":  "倒计时",
                                               "word_count":  3480,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 17:51"
+                                              "updated":  "2026-09-17 18:11"
+                                          },
+                                          {
+                                              "file":  "002.md",
+                                              "path":  "fiction/第七日存档/chapters/002.md",
+                                              "chapter_id":  "002",
+                                              "title":  "未寄出的信",
+                                              "word_count":  3520,
+                                              "status":  "done",
+                                              "updated":  "2026-09-17 18:13"
                                           }
                                       ]
                      },
@@ -211,5 +220,5 @@
                                       ]
                      }
                  ],
-    "updated":  "2026-09-17 17:51:42"
+    "updated":  "2026-09-17 18:13:48"
 }

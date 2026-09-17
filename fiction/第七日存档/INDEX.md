@@ -1,13 +1,13 @@
 ﻿# 第七日存档
 
-> Updated: 2026-09-17 17:51:42
+> Updated: 2026-09-17 18:13:48
 
 | Field | Value |
 |-------|-------|
 | stage | writing |
 | gaps | confirmed |
 | novel | "writing" |
-| chapters | 1 |
+| chapters | 2 |
 
 ## Files
 
@@ -23,4 +23,5 @@
 | id | title | words | status | file |
 |----|-------|-------|--------|------|
 | 001 | 倒计时 | 3480 | done | `001.md` |
+| 002 | 未寄出的信 | 3520 | done | `002.md` |
 

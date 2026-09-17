@@ -28,6 +28,7 @@ alwaysApply: false
 3. 正文只写入 `fiction/{书名}/chapters/`（优先）或 novel.md 的 content 字段；**章节正文须包在 ` ```text ` 围栏内**，便于 Markdown 预览一键 Copy
 4. idea.md 原话：架构师只捕获不润色；写手不修改
 5. 写手不改 STORY_CORE / architecture，除非用户明确要求
+6. 写手每章落盘前须完成写后质检（逻辑连贯、错别字、人物设定、篇幅等），能修的当场修；架构级冲突不落盘
 
 ## 触发
 
