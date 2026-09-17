@@ -1,6 +1,11 @@
 ﻿{
     "items":  [
-
+                  {
+                      "file":  "20260917-scout.md",
+                      "path":  "fiction/_genres/20260917-scout.md",
+                      "status":  "selected",
+                      "updated":  "2026-09-17 16:40"
+                  }
               ],
-    "updated":  "2026-09-17 16:25:37"
+    "updated":  "2026-09-17 17:12:11"
 }

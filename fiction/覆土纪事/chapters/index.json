@@ -1,0 +1,42 @@
+﻿{
+    "book":  "覆土纪事",
+    "chapters":  [
+                     {
+                         "file":  "001.md",
+                         "path":  "fiction/覆土纪事/chapters/001.md",
+                         "chapter_id":  "001",
+                         "title":  "消毒雾",
+                         "word_count":  3420,
+                         "status":  "done",
+                         "updated":  "2026-09-17 16:57"
+                     },
+                     {
+                         "file":  "002.md",
+                         "path":  "fiction/覆土纪事/chapters/002.md",
+                         "chapter_id":  "002",
+                         "title":  "货架未腐",
+                         "word_count":  3380,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:01"
+                     },
+                     {
+                         "file":  "003.md",
+                         "path":  "fiction/覆土纪事/chapters/003.md",
+                         "chapter_id":  "003",
+                         "title":  "焚城协议",
+                         "word_count":  3450,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:01"
+                     },
+                     {
+                         "file":  "004.md",
+                         "path":  "fiction/覆土纪事/chapters/004.md",
+                         "chapter_id":  "004",
+                         "title":  "主管道",
+                         "word_count":  3320,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:01"
+                     }
+                 ],
+    "updated":  "2026-09-17 17:12:11"
+}

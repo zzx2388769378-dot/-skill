@@ -1,9 +1,10 @@
 ﻿{
     "ideas_index":  "fiction/_ideas/index.json",
     "projects":  {
-
+                     "index":  "fiction/覆土纪事/index.json",
+                     "title":  "覆土纪事"
                  },
-    "updated":  "2026-09-17 16:25:37",
+    "updated":  "2026-09-17 17:12:11",
     "genres_index":  "fiction/_genres/index.json",
     "fiction_index":  "fiction/index.json",
     "agents":  [
@@ -25,7 +26,7 @@
                    {
                        "name":  "fiction-index",
                        "path":  ".cursor/skills/fiction-index/SKILL.md",
-                       "description":  "Searches and retrieves project documentation via INDEX.md and index.json. Updates the index when fil..."
+                       "description":  "Searches project docs via folder-local INDEX.md and index.json. Fiction content indexes live under f..."
                    },
                    {
                        "name":  "fiction-pipeline",
