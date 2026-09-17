@@ -8,7 +8,7 @@
                          "stage":  "writing",
                          "gaps_status":  "confirmed",
                          "novel_status":  "\"writing\"",
-                         "chapters_done":  8,
+                         "chapters_done":  11,
                          "files":  [
                                        {
                                            "file":  "idea.md",
@@ -39,7 +39,7 @@
                                               "title":  "倒计时",
                                               "word_count":  1839,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 18:46"
+                                              "updated":  "2026-09-17 19:09"
                                           },
                                           {
                                               "file":  "002.md",
@@ -48,7 +48,7 @@
                                               "title":  "未寄出的信",
                                               "word_count":  1826,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 18:46"
+                                              "updated":  "2026-09-17 19:09"
                                           },
                                           {
                                               "file":  "003.md",
@@ -57,7 +57,7 @@
                                               "title":  "管理员权限",
                                               "word_count":  1986,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 18:46"
+                                              "updated":  "2026-09-17 19:09"
                                           },
                                           {
                                               "file":  "004.md",
@@ -66,7 +66,7 @@
                                               "title":  "空出来的槽",
                                               "word_count":  1062,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 18:46"
+                                              "updated":  "2026-09-17 19:09"
                                           },
                                           {
                                               "file":  "005.md",
@@ -75,7 +75,7 @@
                                               "title":  "遗憾名单",
                                               "word_count":  1159,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 18:46"
+                                              "updated":  "2026-09-17 19:09"
                                           },
                                           {
                                               "file":  "006.md",
@@ -84,7 +84,7 @@
                                               "title":  "第一日终",
                                               "word_count":  1251,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 18:46"
+                                              "updated":  "2026-09-17 19:09"
                                           },
                                           {
                                               "file":  "007.md",
@@ -93,16 +93,43 @@
                                               "title":  "第二个名字",
                                               "word_count":  3009,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 18:46"
+                                              "updated":  "2026-09-17 19:09"
                                           },
                                           {
                                               "file":  "008.md",
                                               "path":  "fiction/第七日存档/chapters/008.md",
                                               "chapter_id":  "008",
-                                              "title":  "年级池规则",
-                                              "word_count":  2301,
+                                              "title":  "收音机",
+                                              "word_count":  1990,
                                               "status":  "done",
-                                              "updated":  "2026-09-17 18:46"
+                                              "updated":  "2026-09-17 19:09"
+                                          },
+                                          {
+                                              "file":  "009.md",
+                                              "path":  "fiction/第七日存档/chapters/009.md",
+                                              "chapter_id":  "009",
+                                              "title":  "转让灰键",
+                                              "word_count":  2373,
+                                              "status":  "done",
+                                              "updated":  "2026-09-17 19:09"
+                                          },
+                                          {
+                                              "file":  "010.md",
+                                              "path":  "fiction/第七日存档/chapters/010.md",
+                                              "chapter_id":  "010",
+                                              "title":  "年级池",
+                                              "word_count":  1989,
+                                              "status":  "done",
+                                              "updated":  "2026-09-17 19:09"
+                                          },
+                                          {
+                                              "file":  "011.md",
+                                              "path":  "fiction/第七日存档/chapters/011.md",
+                                              "chapter_id":  "011",
+                                              "title":  "沈枝未读",
+                                              "word_count":  2104,
+                                              "status":  "done",
+                                              "updated":  "2026-09-17 19:09"
                                           }
                                       ]
                      },
@@ -274,5 +301,5 @@
                                       ]
                      }
                  ],
-    "updated":  "2026-09-17 18:47:12"
+    "updated":  "2026-09-17 19:09:39"
 }

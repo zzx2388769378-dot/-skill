@@ -1,6 +1,6 @@
 ﻿# Genres Index (_genres)
 
-> Updated: 2026-09-17 18:47:12
+> Updated: 2026-09-17 19:09:39
 
 | file | status | updated |
 |------|--------|---------|

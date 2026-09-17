@@ -1,6 +1,7 @@
 # Extracts ```text``` body from chapter NNN.md → NNN.txt (UTF-8, CRLF) for paste-friendly copy.
 param(
     [string]$BookPath,
+    [string]$ChapterFile,
     [switch]$Quiet
 )
 
@@ -52,6 +53,15 @@ function Sync-ChapterTextFile {
         Write-Host "  $name chars=$charCount$warn" -ForegroundColor DarkGray
     }
     return $true
+}
+
+if ($ChapterFile) {
+    $resolved = if ([IO.Path]::IsPathRooted($ChapterFile)) { $ChapterFile } else { Join-Path $Root $ChapterFile }
+    if (Sync-ChapterTextFile $resolved) {
+        if (-not $Quiet) { Write-Host "Synced: $resolved" -ForegroundColor Green }
+        exit 0
+    }
+    exit 1
 }
 
 $targets = @()
