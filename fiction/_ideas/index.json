@@ -1,11 +1,25 @@
 ﻿{
     "items":  [
                   {
+                      "file":  "末日系统-20260917.md",
+                      "path":  "fiction/_ideas/末日系统-20260917.md",
+                      "status":  "selected",
+                      "is_selected":  false,
+                      "updated":  "2026-09-17 17:43"
+                  },
+                  {
                       "file":  "生态末世-20260917.md",
                       "path":  "fiction/_ideas/生态末世-20260917.md",
                       "status":  "selected",
                       "is_selected":  false,
                       "updated":  "2026-09-17 16:42"
+                  },
+                  {
+                      "file":  "第七日存档-selected.md",
+                      "path":  "fiction/_ideas/第七日存档-selected.md",
+                      "status":  "selected",
+                      "is_selected":  true,
+                      "updated":  "2026-09-17 17:43"
                   },
                   {
                       "file":  "覆土纪事-selected.md",
@@ -15,5 +29,5 @@
                       "updated":  "2026-09-17 16:42"
                   }
               ],
-    "updated":  "2026-09-17 17:12:11"
+    "updated":  "2026-09-17 17:51:42"
 }

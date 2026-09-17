@@ -1,10 +1,16 @@
 ﻿{
     "ideas_index":  "fiction/_ideas/index.json",
-    "projects":  {
-                     "index":  "fiction/覆土纪事/index.json",
-                     "title":  "覆土纪事"
-                 },
-    "updated":  "2026-09-17 17:12:11",
+    "projects":  [
+                     {
+                         "index":  "fiction/第七日存档/index.json",
+                         "title":  "第七日存档"
+                     },
+                     {
+                         "index":  "fiction/覆土纪事/index.json",
+                         "title":  "覆土纪事"
+                     }
+                 ],
+    "updated":  "2026-09-17 17:51:42",
     "genres_index":  "fiction/_genres/index.json",
     "fiction_index":  "fiction/index.json",
     "agents":  [

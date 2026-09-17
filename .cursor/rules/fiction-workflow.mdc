@@ -25,7 +25,7 @@ alwaysApply: false
 
 1. **禁止**修改 `_templates/`
 2. gaps 未确认时，架构师不得填 novel.md；写手不得开写
-3. 正文只写入 `fiction/{书名}/chapters/`（优先）或 novel.md 的 content 字段
+3. 正文只写入 `fiction/{书名}/chapters/`（优先）或 novel.md 的 content 字段；**章节正文须包在 ` ```text ` 围栏内**，便于 Markdown 预览一键 Copy
 4. idea.md 原话：架构师只捕获不润色；写手不修改
 5. 写手不改 STORY_CORE / architecture，除非用户明确要求
 

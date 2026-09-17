@@ -1,0 +1,40 @@
+﻿{
+    "novel_status":  "\"writing\"",
+    "updated":  "2026-09-17 17:51:42",
+    "stage":  "writing",
+    "files":  [
+                  {
+                      "file":  "idea.md",
+                      "path":  "fiction/第七日存档/idea.md",
+                      "status":  "-"
+                  },
+                  {
+                      "file":  "gaps.md",
+                      "path":  "fiction/第七日存档/gaps.md",
+                      "status":  "confirmed"
+                  },
+                  {
+                      "file":  "architecture.md",
+                      "path":  "fiction/第七日存档/architecture.md",
+                      "status":  "confirmed"
+                  },
+                  {
+                      "file":  "novel.md",
+                      "path":  "fiction/第七日存档/novel.md",
+                      "status":  "\"writing\""
+                  }
+              ],
+    "chapters":  [
+                     {
+                         "file":  "001.md",
+                         "path":  "fiction/第七日存档/chapters/001.md",
+                         "chapter_id":  "001",
+                         "title":  "倒计时",
+                         "word_count":  3480,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:51"
+                     }
+                 ],
+    "gaps_status":  "confirmed",
+    "title":  "第七日存档"
+}

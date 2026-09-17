@@ -1,6 +1,6 @@
 ﻿{
     "novel_status":  "\"writing\"",
-    "updated":  "2026-09-17 17:12:11",
+    "updated":  "2026-09-17 17:51:42",
     "stage":  "writing",
     "files":  [
                   {
@@ -60,6 +60,105 @@
                          "word_count":  3320,
                          "status":  "done",
                          "updated":  "2026-09-17 17:01"
+                     },
+                     {
+                         "file":  "005.md",
+                         "path":  "fiction/覆土纪事/chapters/005.md",
+                         "chapter_id":  "005",
+                         "title":  "值班员",
+                         "word_count":  3280,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:15"
+                     },
+                     {
+                         "file":  "006.md",
+                         "path":  "fiction/覆土纪事/chapters/006.md",
+                         "chapter_id":  "006",
+                         "title":  "公寓标本",
+                         "word_count":  3350,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:15"
+                     },
+                     {
+                         "file":  "007.md",
+                         "path":  "fiction/覆土纪事/chapters/007.md",
+                         "chapter_id":  "007",
+                         "title":  "撤离广播",
+                         "word_count":  3310,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:15"
+                     },
+                     {
+                         "file":  "008.md",
+                         "path":  "fiction/覆土纪事/chapters/008.md",
+                         "chapter_id":  "008",
+                         "title":  "可写之缝",
+                         "word_count":  3400,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:16"
+                     },
+                     {
+                         "file":  "009.md",
+                         "path":  "fiction/覆土纪事/chapters/009.md",
+                         "chapter_id":  "009",
+                         "title":  "草稿第2页",
+                         "word_count":  3360,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:16"
+                     },
+                     {
+                         "file":  "010.md",
+                         "path":  "fiction/覆土纪事/chapters/010.md",
+                         "chapter_id":  "010",
+                         "title":  "停运列车",
+                         "word_count":  3340,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:18"
+                     },
+                     {
+                         "file":  "011.md",
+                         "path":  "fiction/覆土纪事/chapters/011.md",
+                         "chapter_id":  "011",
+                         "title":  "轨道菌网",
+                         "word_count":  3380,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:18"
+                     },
+                     {
+                         "file":  "012.md",
+                         "path":  "fiction/覆土纪事/chapters/012.md",
+                         "chapter_id":  "012",
+                         "title":  "冷窖远望",
+                         "word_count":  3420,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:18"
+                     },
+                     {
+                         "file":  "013.md",
+                         "path":  "fiction/覆土纪事/chapters/013.md",
+                         "chapter_id":  "013",
+                         "title":  "第一幕终",
+                         "word_count":  3480,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:20"
+                     },
+                     {
+                         "file":  "014.md",
+                         "path":  "fiction/覆土纪事/chapters/014.md",
+                         "chapter_id":  "014",
+                         "title":  "冷窖之门",
+                         "word_count":  3510,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:21"
+                     },
+                     {
+                         "file":  "015.md",
+                         "path":  "fiction/覆土纪事/chapters/015.md",
+                         "chapter_id":  "015",
+                         "title":  "紫外线海",
+                         "word_count":  3460,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:21"
                      }
                  ],
     "gaps_status":  "confirmed",

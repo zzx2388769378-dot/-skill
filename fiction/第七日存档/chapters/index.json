@@ -1,0 +1,15 @@
+﻿{
+    "book":  "第七日存档",
+    "chapters":  [
+                     {
+                         "file":  "001.md",
+                         "path":  "fiction/第七日存档/chapters/001.md",
+                         "chapter_id":  "001",
+                         "title":  "倒计时",
+                         "word_count":  3480,
+                         "status":  "done",
+                         "updated":  "2026-09-17 17:51"
+                     }
+                 ],
+    "updated":  "2026-09-17 17:51:42"
+}
